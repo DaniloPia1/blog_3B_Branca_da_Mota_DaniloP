@@ -1,0 +1,21 @@
+:root {
+    --cor-primaria: #5D3C67;
+    --cor-secundaria: #A67DB3; 
+    --cor-fundo: #E0D2E5; 
+    --cor-texto: #291A2D; 
+    --cor-contraste: #D9BDFA; 
+    --cor-botao: #B998C3;
+}
+
+body {
+    max-width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-contraste);
+    text-align: center;
+    margin: 0 auto;
+    padding: 16px;
+}
