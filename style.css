@@ -58,20 +58,6 @@ button:hover {
 button {
     transition: 0.2s;
 }
-<<<<<<< HEAD
-
-article {
-    animation: surgir 1s ease-in-out;
-}
-
-@keyframes surgir {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 
 
