@@ -108,3 +108,24 @@ header h1 {
         transform: rotate(0deg);
     }
 }
+
+<button id="voltar-topo">⬆️ Voltar ao topo</button>
+
+<script>
+    const botaoTopo = document.getElementById("voltar-topo");
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 300) {
+            botaoTopo.style.display = "block";
+        } else {
+            botaoTopo.style.display = "none";
+        }
+    });
+
+    botaoTopo.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
