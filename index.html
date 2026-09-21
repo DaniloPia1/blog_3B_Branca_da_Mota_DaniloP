@@ -106,19 +106,7 @@
     </article>
 </main>
 
-<script>
-    const botoes = document.querySelectorAll("button");
-
-    botoes.forEach(function(botao) {
-        botao.addEventListener("click", function() {
-            const contador = botao.querySelector("span");
-            let numero = Number(contador.textContent);
-
-            numero++;
-            contador.textContent = numero;
-        });
-    });
-</script>
+</main>
 
 <button id="voltar-topo">⬆️ Voltar ao topo</button>
 
@@ -140,6 +128,25 @@
         });
     });
 </script>
+
+</body>
+</html>
+
+<script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function(botao) {
+        botao.addEventListener("click", function() {
+            const contador = botao.querySelector("span");
+            let numero = Number(contador.textContent);
+
+            numero++;
+            contador.textContent = numero;
+        });
+    });
+</script>
+
+
 
 
 
