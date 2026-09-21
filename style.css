@@ -69,3 +69,16 @@ article:hover {
     transform: scale(1.03);
     box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
 }
+
+article {
+    animation: surgir 1s ease-in-out;
+}
+
+@keyframes surgir {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
