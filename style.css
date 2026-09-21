@@ -107,25 +107,25 @@ header h1 {
     100% {
         transform: rotate(0deg);
     }
+
 }
 
-<button id="voltar-topo">⬆️ Voltar ao topo</button>
+#voltar-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-contraste);
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
 
-<script>
-    const botaoTopo = document.getElementById("voltar-topo");
-
-    window.addEventListener("scroll", function() {
-        if (window.scrollY > 300) {
-            botaoTopo.style.display = "block";
-        } else {
-            botaoTopo.style.display = "none";
-        }
-    });
-
-    botaoTopo.addEventListener("click", function() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
+#voltar-topo:hover {
+    background-color: var(--cor-secundaria);
+    transform: scale(1.05);
+}
 
